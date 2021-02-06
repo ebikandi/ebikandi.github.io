@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://enekobi.netlify.app/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/posts/we-are-live</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/posts/eastern-promises</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/posts/canaries-and-dinosaurs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/basics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/chrome</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/deno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/netlify</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/tag/node</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/category/development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://enekobi.netlify.app/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
