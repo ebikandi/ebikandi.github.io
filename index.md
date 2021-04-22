@@ -1,5 +1,3 @@
-# 📒 Handy Notes
-
 ## Books to read
 
 - [book list](books-to-read.md)
