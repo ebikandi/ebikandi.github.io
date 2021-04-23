@@ -2,7 +2,8 @@
 
 - Domain Modeling Made Functional
 - The year without pants (trabajo en remoto)
-- Composing software by Eruc Elliot
+- Composing software by Eric Elliot
+- [Frontend Testing](https://frontend-testing.org/)
 - Pragmatic programer
 - TDD carlos ble
 - [Undoing Project](https://www.amazon.com/Undoing-Project-Friendship-Changed-Minds/dp/0393254593)

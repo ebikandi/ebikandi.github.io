@@ -27,6 +27,8 @@ const commentFactory = Factory.define(({ sequence }) => ({
   date: date.recent().toISOString(),
   content: lorem.paragraph(),
 }));
+
+const createComment = () => commentFactory.build();
 ```
 
 Podemos exportar la factory y hacer uso de métodos.
@@ -34,13 +36,13 @@ Podemos exportar la factory y hacer uso de métodos.
 ```jsx
 export function generateCommentList(min = 0, max = 10) {
   const length = Math.random() * (max - min) + min;
-	// le pasamos cuantos elementos queremos que construya para la lista
-  return commentFactory.buildList(length); 
+  // le pasamos cuantos elementos queremos que construya para la lista
+  return commentFactory.buildList(length);
 }
 
 export function generateComponent(params) {
-	// **sobreescribiremos las keys** que le pasemos en params
-	return componentFactory.build(params);
+  // **sobreescribiremos las keys** que le pasemos en params
+  return componentFactory.build(params);
 }
 ```
 
