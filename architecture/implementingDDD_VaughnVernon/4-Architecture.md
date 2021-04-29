@@ -1,4 +1,4 @@
-# Chapter 4: Architecture
+# Chapter 4: Architecture *(Partially Unread)*
 
 ### *UNREAD 1st half!*
 
@@ -37,16 +37,24 @@
   - **Dedicated style**. Each handler within a single class with a single *handle()* method. 
   - In **both styles**, <u>handlers should decoupled from one to other.</u> Do not make one depend on/makes use of other.
 - To avoid over-complexity, start with synchronous commands and **switch to async only if scalability requirements demand it**.
-- When the Command Handler completes, **a single Aggregate instance has been updated and a Domain Event has been published** by the repository. 
-- These **events may cause the synchronization of other Aggregates** to mantain consistency.
 
 #### Command Model (or Write Model) executes behavior
 
+- When the Command Handler completes, **a single Aggregate instance has been updated and a Domain Event has been published** by the repository. 
+- These **events may cause the synchronization of other Aggregates** to mantain consistency.
+- Consider that one command may not dispatch any Domain Event (for example when at-least-once scenarios).
 
+#### EventSubscriber Updates the Query Model
 
+- When an event happens, updates the Queries in order to make their consumers receive the latest data.
 
+#### Dealing with an Eventually Consistent Query Model
 
+- Be carefull when multiple users are updating the same entity.
+  - ById() before dispatching the command?
 
+## Event-Driven Architecture (EDA)
 
+- It does not have to be hexagonal but it would be well worth it to consider using **Hexagonal as the overarching style**.
 
-
+![image-20210428172253973](assets/4-Architecture/image-20210428172253973.png)
