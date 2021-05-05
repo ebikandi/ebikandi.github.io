@@ -8,7 +8,8 @@
 - [Arquitectura Hexagonal - Codely](architecture/arquitecturaHexagonal_codely/main.md)
 - [Domain Driven Design Aplicado - Codely](architecture/domainDrivenDesignAplicado/main.md)
 - [CQRS - Codely](architecture/CQRS_codely/main.md)
-- [Implementing Domain Driven Design - Vaughn Vernon ](architecture/implementingDDD_VaughnVernon/main.md)
+- [Implementing Domain Driven Design - Vaughn Vernon](architecture/implementingDDD_VaughnVernon/main.md)
+- [Refactoring Change Preventers - Codely](architecture/changePreventers_codely/main.md)
 
 ## CSS and UX
 
