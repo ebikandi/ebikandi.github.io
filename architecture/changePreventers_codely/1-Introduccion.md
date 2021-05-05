@@ -24,7 +24,7 @@ El **principal problema** reside en que cada cajita impregna todas las de abajo 
 
 Otra vuelta de tuerca, <u>viendo que el parseo de CSV viene junto con el cálculo de duración y de puntos</u>, podría ser **usar Ports & Adapters**, metiendo un repositorio, y así <u>aislar la los detalles de implementación</u>, para no importe si obtenes los datos de un CSV, JSON, o lo que sea.
 
-![image-20210505090202720](assets/1-Introduccion/image-20210505090202720.png)
+![image-20210505092710558](assets/1-Introduccion/image-20210505092710558.png)
 
 ## ¿Por qué no se entiende la S de SOLID?
 
