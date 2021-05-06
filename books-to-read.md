@@ -1,5 +1,6 @@
 # ToRead
 
+- Object Design Style Guide
 - [Getting Real - The smarter, faster, easier way to build a successful web application](https://basecamp.com/books/getting-real)
 - [Inclusive Components](http://book.inclusive-components.design/)
 - Domain Modeling Made Functional
