@@ -1,13 +1,11 @@
 # Chapter 5: Entities
 
-
-
 ## Why we use Entities?
 
 - An Entity is a **unique thing** and is capable of **being changed continuously** over a long period of time.
 - We may be interested in **tracking when, how, and by whom** changes were made.
   - It is the unique identity and mutability characteristics that set Entities apart from **Value Objects**.
-- Sometimes modeling entitties and such is not worth it, and a CRUD-based solution can be the beste choice for saving time and money, but sometimes developing a big complex CRUD can be expensive too. 
+- Sometimes modeling entitties and such is not worth it, and a CRUD-based solution can be the beste choice for saving time and money, but sometimes developing a big complex CRUD can be expensive too.
   - Taking the best choice is key. If DDD is a **justifiable** investment in the business’s bottom line, we use Entities as intended.
 - When an object is **distinguished by its identity**, rather than its attributes, make this primary to its definition in the model.
 
@@ -24,20 +22,20 @@
 - Works best **when human-readable identity is a must**.
 - We can't rely on users to input correct non-unique identifiers, but we can use the data to build those. Anyway, **adding a few extra cycles to ensure the quality** of the identity is a good investment.
 
-### **Application Generates Identity**
+### Application Generates Identity
 
 - **Care must be taken when the application is clustered or otherwise distributed** across multiple computing nodes.
 - Identity creation patterns:
-  - *universally unique identifier* (UUID)
-  - *globally unique identifier* (GUID)
+  - _universally unique identifier_ (UUID)
+  - _globally unique identifier_ (GUID)
 
 > **Local identity** means that Entities held inside an Aggregate need only have uniqueness among other Entities held inside the same Aggregate
 
 - We currently **use this approach** in our projects:
 
-  1. App. layer (e.g *useStartOrder* hook) creates a uuid based id.
-  2. A creation command (e.g *StartOrder*) is dispatched with all the needed data (inluding the id)
-  3. The data is persisted in the DDBB and finnally, a domain event (s.g *OrderStarted*) is published with the created id. 
+  1. App. layer (e.g _useStartOrder_ hook) creates a uuid based id.
+  2. A creation command (e.g _StartOrder_) is dispatched with all the needed data (inluding the id)
+  3. The data is persisted in the DDBB and finnally, a domain event (s.g _OrderStarted_) is published with the created id.
 
   That way, all the flow knows the id, and the creation <u>command does not need to return the created Id</u> (**<u>ANTIPATTERN</u>**! Command don't return anything)
 
@@ -68,6 +66,3 @@
   - Hide identity setters from clients and create guards.
 
 ## Discovering Entities and Their Intrinsic Characteristics
-
-
-
