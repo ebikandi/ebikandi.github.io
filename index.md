@@ -1,21 +1,26 @@
-## Books to read
+# Books to read
 
 - [book list](books-to-read.md)
 
-## Architecture
+# DDD
+
+- [Hilo de Fran Iglesias sobre DDD táctico](https://twitter.com/talkingbit1/status/1390370923627307009) :hot_pepper:
+- [Domain Driven Design Aplicado - Codely](architecture/domainDrivenDesignAplicado/main.md)
+- [Implementing Domain Driven Design - Vaughn Vernon](architecture/implementingDDD_VaughnVernon/main.md)
+
+# Architecture
 
 - [Solid](architecture/solid/main.md)
 - [Arquitectura Hexagonal - Codely](architecture/arquitecturaHexagonal_codely/main.md)
-- [Domain Driven Design Aplicado - Codely](architecture/domainDrivenDesignAplicado/main.md)
 - [CQRS - Codely](architecture/CQRS_codely/main.md)
-- [Implementing Domain Driven Design - Vaughn Vernon](architecture/implementingDDD_VaughnVernon/main.md)
 - [Refactoring Change Preventers - Codely](architecture/changePreventers_codely/main.md)
 
-## CSS and UX
+# CSS and UX
 
 - [Buenas Prácticas en Layouts - Codely](cssAndUx/buenasPracticasLayouts_codely/main.md)
 - [Arquitectura CSS - Codely](cssAndUx/arquitecturaCss_codely/main.md)
 
-## Testing
+# Testing
 
 - [Testing en Frontend - Codely](testing/frontendTesting_codely/main.md)
+
