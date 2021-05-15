@@ -5,8 +5,8 @@
 # DDD
 
 - [Hilo de Fran Iglesias sobre DDD táctico](https://twitter.com/talkingbit1/status/1390370923627307009) :hot_pepper:
-- [Domain Driven Design Aplicado - Codely](architecture/domainDrivenDesignAplicado/main.md)
-- [Implementing Domain Driven Design - Vaughn Vernon](architecture/implementingDDD_VaughnVernon/main.md)
+- [Domain Driven Design Aplicado - Codely](ddd/domainDrivenDesignAplicado/main.md)
+- [Implementing Domain Driven Design - Vaughn Vernon](ddd/implementingDDD_VaughnVernon/main.md)
 
 # Architecture
 
@@ -24,3 +24,6 @@
 
 - [Testing en Frontend - Codely](testing/frontendTesting_codely/main.md)
 
+# Performance & Monitoring
+
+-  [Taller Web Performance - Midudev](performanceAndMonitoring/webPerformance_midudev/main.md) 

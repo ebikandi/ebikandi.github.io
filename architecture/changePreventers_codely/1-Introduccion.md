@@ -28,3 +28,7 @@ Otra vuelta de tuerca, <u>viendo que el parseo de CSV viene junto con el cálcul
 
 ## ¿Por qué no se entiende la S de SOLID?
 
+❌ Uncle Bob en su [post definió el SRP](https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html) como que un "módulo" sólo debería tener una **razón para cambiar**. Esta definción ademas de ser muy **difusa**, podría llevarnos a pensar que "bueno, tendré un módulo de escritura y otro de lectura. Así si la lógica de" persistencia cambia, sólo tendré que cambiar el modulo de escritura".  Esto nos puede llevar a hacer código mirando los detalles de impolementación, o incluso cualquier otro aspecto (porque sabemos que las apps complejas que tenemos hoy en día tienen varios aspectos).
+
+:white_check_mark: Sin embargo, remontandonos unos años, [Dijktstra definio el "separation of concerns"](https://www.cs.utexas.edu/users/EWD/ewd04xx/EWD447.PDF) lo que nos lleva **a una aproximación mas lógica** derivada del dominio. Es decir, **juntar en un módulo todo lo relacionado a un concepto**. Por ejemplo, <u>tener un *OrderRepository* para todos los casos de uso relacionados con la entidad *Order*,</u> y ademas <u>cada método del repositorio "wrappea" un solo caso de uso que es independiente del resto</u>. Esto nos lleva a una aproximación para poder modelar nuestro negocio basandonos en DDD.
+
