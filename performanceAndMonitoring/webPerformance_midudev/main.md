@@ -55,9 +55,9 @@
 
     ```
     ./assets/
-    				|css/
-    				|images/
-    				|...
+      |css/
+      |images/
+      |...
     ```
 
 - Cuidado con librerías de utilidades, animaciones, etc
@@ -186,10 +186,18 @@ Fuentes tambien en <u>local</u>. SI usamos <u>GoogleFonts nos bajará todas</u>.
 #### Percepción VS Realidad
 
 - Mientras se produce la carga hay diferentes tecnicas para mejorar la UX y hacer que la web sea comprensible sin tener que esperar a las imagenes.
+
   - Introducir placeholders que ocupen el espacio que ocupará la imagen.
+
     - Una imagen standard.
+
     - Colores de fondo
+
     - La imagen ultra minificada, luego ampliada al tamaño a mostrar y un blur aplicado
+
     - Siluetas
-- 
+
+      
+
+# Chapter 03
 
