@@ -24,6 +24,7 @@ describe("Error Toggle", () => {
     expect(wrapper.vm.open).toBe(false);
   });
 });
+ 
 ```
 
 El test de arriba se puede mejorar para testear desde el punto de vista del usuario:
