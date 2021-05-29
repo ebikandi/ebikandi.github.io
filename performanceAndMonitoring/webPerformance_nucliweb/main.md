@@ -1,4 +1,4 @@
-# Taller Web Performance - Midudev
+# Taller Web Performance - Nucliweb
 
 [Slides](https://slides.com/joanleon/taller-de-web-performance-05-2021?token=kzexINcS)
 
