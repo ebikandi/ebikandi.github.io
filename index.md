@@ -15,6 +15,14 @@
 - [CQRS - Codely](architecture/CQRS_codely/main.md)
 - [Refactoring Change Preventers - Codely](architecture/changePreventers_codely/main.md)
 
+# JS, TS, ...
+
+- [Epic-React](jsts/epic-react/main.md) 
+
+
+
+
+
 # CSS and UX
 
 - [Buenas Prácticas en Layouts - Codely](cssAndUx/buenasPracticasLayouts_codely/main.md)

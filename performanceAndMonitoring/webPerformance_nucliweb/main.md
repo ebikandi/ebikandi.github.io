@@ -4,7 +4,7 @@
 
 # Chapter 01
 
-[Video in Youtube](https://www.youtube.com/watch?v=0z1dN0YGF1M)
+[Grabación del chapter 01](https://www.youtube.com/watch?v=0z1dN0YGF1M)
 
 - Cada vez las webs estan pesando más.
 
@@ -36,6 +36,8 @@
 
 
 # Chapter 2
+
+[Grabación del chapter 02](https://www.youtube.com/watch?v=1pavyn1tDaU)
 
 ## ¿Como funciona el navegador al cargar una web?
 
@@ -201,3 +203,27 @@ Fuentes tambien en <u>local</u>. SI usamos <u>GoogleFonts nos bajará todas</u>.
 
 # Chapter 03
 
+- **Critical CSS:** lo que se carga <u>antes del fold</u> ("above the fold") 
+
+  - **fold**: lo que pasa antes de cualquier navegacion/scroll. (a.k.a <u>lo que sale primero</u>) (a.k.a primera plana)
+
+- **Non-Critical CSS:** lo que viene <u>después del fold</u>
+
+- El <u>fold puede ser diferente en desktop o en mobile, ya que en viewport puede ser distinto.</u>
+
+  - Lo ideal es ser Data-Driven y saber que dispositivos te visitan para saber que viewport deberías de soportas.
+
+- Algunas herramientas:
+
+  - [Critical](https://github.com/addyosmani/critical): se usa como modulo JS y configurarlo para el bundling
+    - Extrae el CriticalCSS y lo inserta en el <head> con una estiqueta <style>
+  - [Html-critical-webpack-plugin](https://github.com/anthonygore/html-critical-webpack-plugin)
+    - Saca el CriticalCSS en runtime. Al entrar en una página, te detecta el viewport del dispotivo, te extrae el CriticalCSS para ese viewport y te lo expone.
+    - Al hacerlo en runtime, mete **latencia**.
+  - [Sui-Critical-CSS]()
+  - Critical-css-webpack-plugin
+  - criticalcss
+
+  ### Ejemplo con html-webpack.plugin
+
+  - Instalarlo como dependendia y configurarlo en el *webpack.config.js*
