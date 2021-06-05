@@ -216,7 +216,7 @@ Fuentes tambien en <u>local</u>. SI usamos <u>GoogleFonts nos bajará todas</u>.
 - Algunas herramientas:
 
   - [Critical](https://github.com/addyosmani/critical): se usa como modulo JS y configurarlo para el bundling
-    - Extrae el CriticalCSS y lo inserta en el <head> con una estiqueta <style>
+    - Extrae el CriticalCSS y lo inserta en el `<head>` con una etiqueta  `<style>`
   - [Html-critical-webpack-plugin](https://github.com/anthonygore/html-critical-webpack-plugin)
     - Saca el CriticalCSS en runtime. Al entrar en una página, te detecta el viewport del dispotivo, te extrae el CriticalCSS para ese viewport y te lo expone.
     - Al hacerlo en runtime, mete **latencia**.
