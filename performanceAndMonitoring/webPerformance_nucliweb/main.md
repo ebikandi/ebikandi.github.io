@@ -204,26 +204,58 @@ Fuentes tambien en <u>local</u>. SI usamos <u>GoogleFonts nos bajará todas</u>.
 # Chapter 03
 
 - **Critical CSS:** lo que se carga <u>antes del fold</u> ("above the fold") 
-
   - **fold**: lo que pasa antes de cualquier navegacion/scroll. (a.k.a <u>lo que sale primero</u>) (a.k.a primera plana)
-
 - **Non-Critical CSS:** lo que viene <u>después del fold</u>
-
 - El <u>fold puede ser diferente en desktop o en mobile, ya que en viewport puede ser distinto.</u>
-
   - Lo ideal es ser Data-Driven y saber que dispositivos te visitan para saber que viewport deberías de soportas.
-
 - Algunas herramientas:
-
   - [Critical](https://github.com/addyosmani/critical): se usa como modulo JS y configurarlo para el bundling
     - Extrae el CriticalCSS y lo inserta en el `<head>` con una etiqueta  `<style>`
   - [Html-critical-webpack-plugin](https://github.com/anthonygore/html-critical-webpack-plugin)
     - Saca el CriticalCSS en runtime. Al entrar en una página, te detecta el viewport del dispotivo, te extrae el CriticalCSS para ese viewport y te lo expone.
     - Al hacerlo en runtime, mete **latencia**.
-  - [Sui-Critical-CSS]()
-  - Critical-css-webpack-plugin
-  - criticalcss
+  - [Sui-Critical-CSS](https://github.com/SUI-Components/sui/tree/master/packages/sui-critical-css)
 
-  ### Ejemplo con html-webpack.plugin
+## Ejemplo con html-webpack-plugin
 
-  - Instalarlo como dependendia y configurarlo en el *webpack.config.js*
+- Instalarlo como dependendia y configurarlo en el *webpack.config.js*.
+- Deberíamos de <u>evitar que en el CriticalCss apareciesen media-queries</u>. 
+  - Si usamos <u>min-width las media-queries no iran al CriticalCss</u>. Con el max-width, sí.
+  - Filosofía <u>mobile-first</u>.
+- Además de en el front, también <u>se puede extraer el CriticalCSS en el back</u>.
+  - https://www.smashingmagazine.com/2016/08/optimizing-critical-path-performance-with-express-server-and-handlebars/
+
+## Mejorando la carga de recursos
+
+- [Preload, Prefetch & Priorities in Chrome by Addy Osmani](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)
+  - **preload**: cuando vas a necesitar un recurso en unos segundos.
+    - [Preload critical assets](https://web.dev/preload-critical-assets/)
+  - **prefetch**: cuando necesite un recurso para página siguiente.
+  - **preconnect**: cuando sabe que necesitará un recurso pronto, pero aún no conoce su URL completa
+  - **dns-prefetch**: cuando sabe que necesitará un recurso pronto, pero aún no conoce su URL completa (para navegadores antiguos)
+  - **prerender**: cuando esté seguro de que la mayoría de los usuarios navegarán a una página específica y desea acelerarla.
+  - **modulepreload**: cuando vaya a necesitar un script de módulo ES pronto. 
+
+- [Prevent unnecesary network requests: cache-control, eTag & LastMotified](https://web.dev/http-cache/)
+- Usar CDNs en la medida de lo posible
+- Minigicar payloads y archivos
+  - [Gzip](https://web.dev/codelab-text-compression/)
+    - Soporte universal
+  - [Brotli](https://web.dev/codelab-text-compression-brotli/) 
+    - [bastante soportado](https://caniuse.com/brotli)
+    - Brotli **puede** ser mejor para html, css y js
+
+## Third-parties
+
+- Cargarlas <u>siempre despues de nuestro JS</u>, por si el third-party peta no afecte a nuesta lógica.
+  - Ponerlas al final del documento.
+- usarlos con [async o defer](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript)
+  - `<sript async src="script.js"/>`
+  - `<sript defer src="script.js"/>`
+- [Keeping thir-parties script under control](https://web.dev/controlling-third-party-scripts/)
+
+## Monitorización
+
+- Algunas herramientas
+  - Datadog
+  - DebugBear
